@@ -1,0 +1,74 @@
+ladspa-sdk
+------------------------------------------
+The Linux Audio Developer's Simple Plugin API (LADSPA) attempts to give 
+programmers the ability to write simple `plugin' audio processors in 
+C/C++ and link them dynamically against a range of host applications.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-20080624-2
+  cygport-0.4.0-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  make-3.81-1
+
+Canonical website:
+  http://www.ladspa.org/
+
+Canonical download:
+  http://www.ladspa.org/download/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ladspa-sdk-1.13-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ladspa-sdk-1.13-X.cygport all
+
+This will create:
+  /usr/src/ladspa-sdk-1.13-X-src.tar.bz2
+  /usr/src/ladspa-sdk-1.13-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/profile.d/ladspa-sdk.csh
+  /etc/profile.d/ladspa-sdk.sh
+  /usr/bin/analyseplugin.exe
+  /usr/bin/applyplugin.exe
+  /usr/bin/listplugins.exe
+  /usr/include/ladspa.h
+  /usr/lib/ladspa/amp.so
+  /usr/lib/ladspa/delay.so
+  /usr/lib/ladspa/filter.so
+  /usr/lib/ladspa/noise.so
+  /usr/lib/ladspa/sine.so
+  /usr/share/doc/ladspa-sdk-1.13/COPYING
+  /usr/share/doc/ladspa-sdk-1.13/README
+  /usr/share/doc/ladspa-sdk-1.13/html/background.html
+  /usr/share/doc/ladspa-sdk-1.13/html/changes.html
+  /usr/share/doc/ladspa-sdk-1.13/html/download.html
+  /usr/share/doc/ladspa-sdk-1.13/html/example_plugins.html
+  /usr/share/doc/ladspa-sdk-1.13/html/index.html
+  /usr/share/doc/ladspa-sdk-1.13/html/installation.html
+  /usr/share/doc/ladspa-sdk-1.13/html/license.html
+  /usr/share/doc/ladspa-sdk-1.13/html/overview.html
+  /usr/share/doc/ladspa-sdk-1.13/html/shared_plugins.html
+  /usr/share/doc/ladspa-sdk-1.13/html/unique_ids.html
+
+------------------
+
+Port Notes:
+
+----- version 1.13-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

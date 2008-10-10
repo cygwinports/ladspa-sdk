@@ -1,0 +1,13 @@
+--- origsrc/ladspa_sdk/src/ladspa.h	2002-08-07 16:15:12.000000000 -0500
++++ src/ladspa_sdk/src/ladspa.h	2008-10-10 03:13:40.010913300 -0500
+@@ -592,6 +592,10 @@
+ typedef const LADSPA_Descriptor * 
+ (*LADSPA_Descriptor_Function)(unsigned long Index);
+ 
++/* required for _init/_fini to be called automatically by dlopen/dlclose */
++__attribute__((constructor)) void _init(void);
++__attribute__((destructor)) void _fini(void);
++
+ /**********************************************************************/
+ 
+ #ifdef __cplusplus

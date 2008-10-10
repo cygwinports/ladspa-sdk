@@ -1,0 +1,16 @@
+--- origsrc/ladspa_sdk/src/makefile	2008-10-10 01:27:44.060833300 -0500
++++ src/ladspa_sdk/src/makefile	2008-10-10 01:28:22.592083300 -0500
+@@ -37,11 +37,11 @@
+ #
+ 
+ ../plugins/%.so:	plugins/%.c ladspa.h
+-	$(CC) $(CFLAGS) $(INCLUDES) -fPIC -o plugins/$*.o -c plugins/$*.c
++	$(CC) $(CFLAGS) $(INCLUDES) -o plugins/$*.o -c plugins/$*.c
+ 	$(LD) $(RAW_LDFLAGS) -o ../plugins/$*.so plugins/$*.o -shared
+ 
+ ../plugins/%.so:	plugins/%.cpp ladspa.h
+-	$(CXX) $(CXXFLAGS) $(INCLUDES) -fPIC -o plugins/$*.o -c plugins/$*.cpp
++	$(CXX) $(CXXFLAGS) $(INCLUDES) -o plugins/$*.o -c plugins/$*.cpp
+ 	$(CXX) $(LDFLAGS) -o ../plugins/$*.so plugins/$*.o -shared
+ 
+ ###############################################################################
