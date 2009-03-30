@@ -12,7 +12,10 @@ SRC_DIR="${PN//-/_}"
 src_compile() {
 	lndirs
 	cd ${B}/src
-	cygmake targets LDFLAGS="-Wl,--enable-auto-image-base" LD='$(CC) $(LDFLAGS)'
+	cygmake targets \
+		CC="${CC}" \
+		LD='$(CC) $(LDFLAGS)' \
+		LDFLAGS="-Wl,--enable-auto-image-base"
 }
 
 src_test() {

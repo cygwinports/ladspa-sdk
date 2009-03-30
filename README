@@ -5,15 +5,17 @@ programmers the ability to write simple `plugin' audio processors in
 C/C++ and link them dynamically against a range of host applications.
 
 Runtime requirements:
-  cygwin-1.5.25-15
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
+  libstdc++6-4.3.2-2
 
 Build requirements:
 (besides corresponding -devel packages)
   binutils-20080624-2
-  cygport-0.4.0-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  make-3.81-1
+  cygport-0.9.6-1
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  make-3.81-2
 
 Canonical website:
   http://www.ladspa.org/
@@ -49,25 +51,25 @@ Files included in the binary package:
   /usr/lib/ladspa/filter.so
   /usr/lib/ladspa/noise.so
   /usr/lib/ladspa/sine.so
-  /usr/share/doc/ladspa-sdk-1.13/COPYING
-  /usr/share/doc/ladspa-sdk-1.13/README
-  /usr/share/doc/ladspa-sdk-1.13/html/background.html
-  /usr/share/doc/ladspa-sdk-1.13/html/changes.html
-  /usr/share/doc/ladspa-sdk-1.13/html/download.html
-  /usr/share/doc/ladspa-sdk-1.13/html/example_plugins.html
-  /usr/share/doc/ladspa-sdk-1.13/html/index.html
-  /usr/share/doc/ladspa-sdk-1.13/html/installation.html
-  /usr/share/doc/ladspa-sdk-1.13/html/license.html
-  /usr/share/doc/ladspa-sdk-1.13/html/overview.html
-  /usr/share/doc/ladspa-sdk-1.13/html/shared_plugins.html
-  /usr/share/doc/ladspa-sdk-1.13/html/unique_ids.html
+  /usr/share/doc/ladspa-sdk/COPYING
+  /usr/share/doc/ladspa-sdk/README
+  /usr/share/doc/ladspa-sdk/html/background.html
+  /usr/share/doc/ladspa-sdk/html/changes.html
+  /usr/share/doc/ladspa-sdk/html/download.html
+  /usr/share/doc/ladspa-sdk/html/example_plugins.html
+  /usr/share/doc/ladspa-sdk/html/index.html
+  /usr/share/doc/ladspa-sdk/html/installation.html
+  /usr/share/doc/ladspa-sdk/html/license.html
+  /usr/share/doc/ladspa-sdk/html/overview.html
+  /usr/share/doc/ladspa-sdk/html/shared_plugins.html
+  /usr/share/doc/ladspa-sdk/html/unique_ids.html
 
 ------------------
 
 Port Notes:
 
------ version 1.13-1 -----
-Initial release for Cygwin.
+----- version 1.13-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
