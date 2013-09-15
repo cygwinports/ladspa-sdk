@@ -1,7 +1,0 @@
-category: Audio
-requires: libgcc1 libstdc++6
-sdesc: "Audio processor plugin framework"
-ldesc: "The Linux Audio Developer's Simple Plugin API (LADSPA) attempts 
-to give programmers the ability to write simple `plugin' audio 
-processors in C/C++ and link them dynamically against a range of host 
-applications."
